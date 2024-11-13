@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Prueba-Tecnica-Semana/static/css/main.cf888e45.css",
-    "main.js": "/Prueba-Tecnica-Semana/static/js/main.028fd455.js",
+    "main.css": "/Prueba-Tecnica-Semana/static/css/main.5891208c.css",
+    "main.js": "/Prueba-Tecnica-Semana/static/js/main.79158a91.js",
     "static/js/453.a5b5c665.chunk.js": "/Prueba-Tecnica-Semana/static/js/453.a5b5c665.chunk.js",
     "index.html": "/Prueba-Tecnica-Semana/index.html",
-    "main.cf888e45.css.map": "/Prueba-Tecnica-Semana/static/css/main.cf888e45.css.map",
-    "main.028fd455.js.map": "/Prueba-Tecnica-Semana/static/js/main.028fd455.js.map",
+    "main.5891208c.css.map": "/Prueba-Tecnica-Semana/static/css/main.5891208c.css.map",
+    "main.79158a91.js.map": "/Prueba-Tecnica-Semana/static/js/main.79158a91.js.map",
     "453.a5b5c665.chunk.js.map": "/Prueba-Tecnica-Semana/static/js/453.a5b5c665.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf888e45.css",
-    "static/js/main.028fd455.js"
+    "static/css/main.5891208c.css",
+    "static/js/main.79158a91.js"
   ]
 }
