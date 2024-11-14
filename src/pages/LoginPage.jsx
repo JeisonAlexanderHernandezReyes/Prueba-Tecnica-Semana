@@ -18,10 +18,9 @@ const LoginPage = () => {
         });
 
         login(userInfo.data);
-
         navigate('/');
-      } catch (error) {
-        console.error('Failed to fetch user info:', error);
+      } catch (err) {
+        console.error('Failed to fetch user info:', err);
       }
     },
     onError: (error) => {
@@ -30,13 +29,19 @@ const LoginPage = () => {
   });
 
   return (
-    <div className="flex items-center justify-center h-screen">
-      <button
-        onClick={handleLogin}
-        className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
-      >
-        Iniciar sesión con Google
-      </button>
+    <div className="flex items-center justify-center h-screen bg-gray-100">
+      <div className="bg-white shadow-md rounded-lg p-8 max-w-sm w-full">
+        <h1 className="text-2xl font-bold text-center mb-6 text-gray-800">
+          Bienvenido
+        </h1>
+        <button
+          onClick={handleLogin}
+          className="flex items-center justify-center bg-red-500 text-white py-3 px-4 rounded-md hover:bg-red-600 w-full font-semibold transition duration-200"
+        >
+          <img src="path-to-google-icon" alt="Google icon" className="w-5 h-5 mr-2" />
+          Acceder con Google
+        </button>
+      </div>
     </div>
   );
 };
