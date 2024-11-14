@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Prueba-Tecnica-Semana/static/css/main.93d3deb0.css",
-    "main.js": "/Prueba-Tecnica-Semana/static/js/main.6138f27c.js",
+    "main.js": "/Prueba-Tecnica-Semana/static/js/main.5ae2215f.js",
     "static/js/453.a5b5c665.chunk.js": "/Prueba-Tecnica-Semana/static/js/453.a5b5c665.chunk.js",
     "index.html": "/Prueba-Tecnica-Semana/index.html",
     "main.93d3deb0.css.map": "/Prueba-Tecnica-Semana/static/css/main.93d3deb0.css.map",
-    "main.6138f27c.js.map": "/Prueba-Tecnica-Semana/static/js/main.6138f27c.js.map",
+    "main.5ae2215f.js.map": "/Prueba-Tecnica-Semana/static/js/main.5ae2215f.js.map",
     "453.a5b5c665.chunk.js.map": "/Prueba-Tecnica-Semana/static/js/453.a5b5c665.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.93d3deb0.css",
-    "static/js/main.6138f27c.js"
+    "static/js/main.5ae2215f.js"
   ]
 }
