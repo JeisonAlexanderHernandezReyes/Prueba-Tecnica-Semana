@@ -38,7 +38,6 @@ const LoginPage = () => {
           onClick={handleLogin}
           className="flex items-center justify-center bg-red-500 text-white py-3 px-4 rounded-md hover:bg-red-600 w-full font-semibold transition duration-200"
         >
-          <img src="path-to-google-icon" alt="Google icon" className="w-5 h-5 mr-2" />
           Acceder con Google
         </button>
       </div>
