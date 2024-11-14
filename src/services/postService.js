@@ -1,9 +1,14 @@
 import apiClient from './apiClient';
 
 export const fetchPosts = async (tag = '') => {
-  const response = await apiClient.get('/post', {
-    params: tag ? { tags: tag } : {},
+  const sanitizedTag = tag.trim().replace(/^#/, '');
+  
+  const endpoint = sanitizedTag ? `/tag/${sanitizedTag}/post` : '/post';
+
+  const response = await apiClient.get(endpoint, {
+    params: { limit: 30 },
   });
+
   return response.data.data;
 };
 
