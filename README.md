@@ -1,70 +1,83 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Prueba Técnica Semana
 
-## Available Scripts
+## Descripción del Proyecto
 
-In the project directory, you can run:
+Esta aplicación es una plataforma interactiva desarrollada con **React** que permite a los usuarios explorar publicaciones, filtrar por etiquetas, ver detalles de publicaciones específicas y una lista de usuarios. La aplicación incluye autenticación mediante Google OAuth y un sistema de rutas protegido.
 
-### `npm start`
+## Características Principales
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Inicio de sesión con Google OAuth.**
+- **Visualización de publicaciones** con filtrado por etiquetas.
+- **Visualización de detalles** de publicaciones, incluyendo comentarios.
+- **Listado de usuarios** con detalles básicos.
+- **Rutas protegidas** para áreas específicas.
+- **Interfaz responsiva** con diseño limpio y moderno.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Flujo de Funcionamiento del Proyecto
 
-### `npm test`
+### 1. Clonar el Repositorio
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Abre la terminal o consola de comandos.
+2. Ejecuta el siguiente comando para clonar el repositorio:
+   ```bash
+   git clone https://github.com/JeisonAlexanderHernandezReyes/Prueba-Tecnica-Semana.git
+   ```
+3. Navega al directorio clonado:
+   ```bash
+   cd Prueba-Tecnica-Semana
+   ```
+4. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+5. Crea un archivo `.env` en la raíz del proyecto con la siguiente variable:
+   ```env
+   REACT_APP_GOOGLE_CLIENT_ID=tu_google_client_id
+   ```
+6. Ejecuta la aplicación localmente:
+   ```bash
+   npm start
+   ```
 
-### `npm run build`
+### 2. Flujo de Interacción del Usuario
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Inicio de Sesión**: El usuario se autentica mediante Google.
+- **Página Principal**: Visualización y filtrado de publicaciones por etiquetas.
+- **Detalles de Publicaciones**: Vista detallada de cada publicación y sus comentarios.
+- **Lista de Usuarios**: Accesible solo tras autenticarse.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 3. Despliegue en GitHub Pages
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+El proyecto está desplegado en **GitHub Pages** y se puede acceder desde:
+[https://jeisonalexanderhernandezreyes.github.io/Prueba-Tecnica-Semana/](https://jeisonalexanderhernandezreyes.github.io/Prueba-Tecnica-Semana/)
 
-### `npm run eject`
+### 4. Función de Rutas
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Públicas**:
+  - `/`: Página principal.
+  - `/post/:id`: Detalles de una publicación.
+  - `/login`: Página de inicio de sesión.
+- **Protegidas**:
+  - `/users`: Lista de usuarios.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+El acceso a rutas protegidas está gestionado por el componente `ProtectedRoute`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Servicios Importantes
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### postService.js
+- `fetchPosts(tag)`: Devuelve publicaciones filtradas por etiqueta.
+- `fetchPostById(id)`: Obtiene detalles de una publicación específica.
+- `fetchCommentsByPostId(id)`: Obtiene comentarios de una publicación.
 
-## Learn More
+### userService.js
+- `fetchUsers()`: Obtiene una lista de usuarios.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Tecnologías Utilizadas
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **React 18**
+- **React Router DOM**
+- **Axios**
+- **Google OAuth**
+- **Tailwind CSS**
+- **GitHub Pages**
