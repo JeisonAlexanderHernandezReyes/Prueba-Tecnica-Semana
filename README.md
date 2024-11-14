@@ -42,8 +42,12 @@ Esta aplicación es una plataforma interactiva desarrollada con **React** que pe
 
 ### 2. Flujo de Interacción del Usuario
 
+### 2. Flujo de Interacción del Usuario
+
 - **Inicio de Sesión**: El usuario se autentica mediante Google.
 - **Página Principal**: Visualización y filtrado de publicaciones por etiquetas.
+  - **Filtro de Etiquetas**: Solo se mostrarán las etiquetas asociadas a los posts que contienen información y contenido visible. Esto significa que si un post no contiene información o tiene una etiqueta sin publicaciones visibles asociadas, esa etiqueta **no** aparecerá como opción de filtro. Probar con "animal,pet,water, tech"
+  - **Etiquetas debajo de los posts**: Las etiquetas asociadas a las publicaciones visibles se muestran debajo de cada post de manera destacada. Los usuarios pueden hacer clic en ellas para filtrar las publicaciones por la etiqueta seleccionada, lo que proporciona una navegación más intuitiva.
 - **Detalles de Publicaciones**: Vista detallada de cada publicación y sus comentarios.
 - **Lista de Usuarios**: Accesible solo tras autenticarse.
 
